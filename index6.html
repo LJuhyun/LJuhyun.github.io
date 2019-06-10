@@ -10,16 +10,6 @@
 	.clear{
 		clear : both;
 	}
-		
-		
-	a {
-		text-decoration: none;
-		color: #712b33;
-	}
-
-	a:hover{
-		text-decoration: underline;
-	}
 
 	header{
 			width: 1000px;
@@ -147,8 +137,19 @@ section{
 			content: "▶"
 		}
 
-		#pline{
-			margin-top: -10px;
+		aside dt{
+			font-weight: bold;
+			color: #712b33;
+			margin : 8px 0px 0px 25px;
+
+		}
+
+		aside dd{
+			margin-left: 40px;
+			margin-bottom: 8px;
+		}
+
+		.pline{
 			color: #670000;
 			font-size: 30px;
 			font-weight: bold;
@@ -167,6 +168,24 @@ section{
 	#customer{
 		float: right;
 		margin: 30px 30px 0 180px;
+	}
+
+	.data {
+	float: left;
+	margin-bottom: 35px;
+	}
+
+	.data.e{
+		width :400px;
+	}
+
+	.app{
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+	.app:before{
+		content: "ㆍ"
 	}
 </style>
 </head>
@@ -229,8 +248,43 @@ section{
 
 	<aside>
 
-		<div> </div>
-		
+		<a href="http://fcidogshow.org/"><img class="data i" src="./img/pet1.JPG" title="KKF 펫 페스티벌" width="180"></a>
+
+		<span class="clear"></span>
+		<dl class="data e"><span class="app">KKF 펫 페스티벌</span>
+			<dt>일시 : </dt>
+			<dd>2019.06.15(토) ~ 2019.06.16(일)</dd>
+
+			<dt>장소 : </dt>
+			<dd>경기도 고양시 일산서구 킨텍스로 217-60</dd>
+
+			<dt>주최 : </dt>
+			<dd>사단법인 한국애견연명</dd>
+
+			<dt>입장료 : </dt>
+			<dd>일반인 및 대학생 : 6,000원<br>
+				초, 중, 고등학생 : 4,000원</dd>
+		</dl>
+
+	
+		<a href="http://www.ilovepets.co.kr/main.php"><img class="data i" src="./img/pet2.PNG" width="180"></a>
+		<dl class="data e"><span class="app">부산 반려동물 박람회</span>
+			<dt>일시 : </dt>
+			<dd>2019.07.05(금) ~ 2019.07.07(일)</dd>
+
+			<dt>장소 : </dt>
+			<dd>부산광역시 해운대구 APEC로 55</dd>
+
+			<dt>주최 : </dt>
+			<dd>(주)메세코리아</dd>
+
+			<dt>입장료 : </dt>
+			<dd>현장등록 : 5,000원(미취학아동 무료)<br>
+				사전등록 : 무료 (페어프리 어플 다운 시 무료)</dd>			
+		</dl>
+
+
+
 		
 	</aside>
 
