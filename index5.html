@@ -11,6 +11,15 @@
 		clear : both;
 	}
 
+	a {
+		text-decoration: none;
+		color: #712b33;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
 	header{
 			width: 1000px;
 			height: 75px;
@@ -74,7 +83,7 @@
 		.point:hover{
 			cursor: pointer;
 			opacity: 0.5;
-		}
+			}
 
 		nav li{
 		margin-top: 1px;
@@ -88,17 +97,44 @@
 			display: inline-block;
 			margin: 0px 55px 0px;
 			text-align: center;
+
 		}
+
 	.dropdownContents{
 			display: none;
 			border: solid 2px #6b2b33;
 			background-color : white;
 			color: black;
 			width: 100px;
+			height: 0px;
 			padding: 12px 16px;
 			position: absolute;
+			transition: height 2s;
 		}
+
 	.dropdown:hover .dropdownContents{
+			display: block;
+			height: auto;
+		}
+
+		.drop{
+			color: #712b33;
+			text-decoration: underline;
+		}
+
+		.dropContents{
+			display: none;
+			color: black;
+			border: solid 0px #6b2b33;
+			margin: 12px 16px;
+			background-color: white;
+		}
+
+		.drop:hover{
+			cursor : pointer;
+		}
+
+		.drop:active .dropContents{
 			display: block;
 		}
 
@@ -128,23 +164,21 @@ section{
 		width: 680px;
 	}
 
-	aside div{
+		aside div{
 				padding: 15px 0 15px 0;
 				font-size: 16px;
 		}
 
-		aside div:before {
+		.pdiv:before {
 			content: "▶"
 		}
 
 		.app{
 			font-size: 18px;
 			font-weight: bold;
+			display: inline;
 		}
 
-		.app:before{
-			content: "ㆍ"
-		}
 
 		aside dt{
 			margin: 8px 0px 8px 20px;
@@ -265,17 +299,19 @@ section{
 
 			<p id="pline">-----------------------------------</p>
 
-			<div>동물도 결국은 사람이나 다름 없는 존재이다. 병에 걸리기도 하고, 그 병은 다른 사람에게 옮기기도 하고, 그로 인해 죽기도 하는 것이다. 특히 동물의 병 중에는 사람 또한 옮을 수 있는 종류가 여럿 있어, 집에서 키울 경우 위험해질 수도 있다. 이런 사태를 예방하기 위해 동물병원을 찾아 반려동물에게 예방접종을 해야 한다. </div>
+			<div class="pdiv">동물도 결국은 사람이나 다름 없는 존재이다. 병에 걸리기도 하고, 그 병은 다른 사람에게 옮기기도 하고, 그로 인해 죽기도 하는 것이다. 특히 동물의 병 중에는 사람 또한 옮을 수 있는 종류가 여럿 있어, 집에서 키울 경우 위험해질 수도 있다. 이런 사태를 예방하기 위해 동물병원을 찾아 반려동물에게 예방접종을 해야 한다. </div>
 
 			<h2>예방접종의 종류</h2>
 
 			<p id="pline">-----------------------------------</p>
 
-			<div>예방접종은 보통 반려견과 반려묘에게 자주 시행된다. 반려조나 다른 반려동물에게도 예방접종이 있기는 하나, 대부분은 하지 않고 항생제나 구충제 등을 먹이는 듯 하다.
+			<div class="pdiv">예방접종은 보통 반려견과 반려묘에게 자주 시행된다. 반려조나 다른 반려동물에게도 예방접종이 있기는 하나, 대부분은 하지 않고 항생제나 구충제 등을 먹이는 듯 하다.
 				<br>따라서 본 홈페이지에서는 가장 자주 시행되고 종류도 다양한 반려견과 반려묘의 예방접종에 대해 정리해보고자 한다.</div>
 				<br>
 
+				<div class="drop">
 			<dl><span class="app">반려견</span>
+				<div class="dropContents">
 				<dt>종합 백신 :</dt>
 				<dd>생후 6~8주 사이에 맞아야 하는 백신이다. 2~3주 간격으로 총 5회 이상 맞아야 하며 이후에는 1년에 한번씩 주기적으로 접종을 해줘야 한다.</dd>
 
@@ -290,11 +326,14 @@ section{
 
 				<dt>광견병 :</dt>
 				<dd>생후 3개월 이후에 맞아야 하는 백신이다. 처음 맞을때 1번만 맞으면 되고, 이후에 1년에 한번씩 주기적으로 접종을 해줘야 한다.</dd>
+			</div></div>
 			</dl>
 
 			<br>
 
-			<dl><span class="app">반려묘</dl>
+			<div class="drop">
+			<dl><span class="app">반려묘</span>
+				<div class="dropContents">
 				<dt>종합 백신 :</dt>
 				<dd>생후 7~8주 사이에 맞아야 하는 백신이다. 개개인의 차에 따라 3주 간격으로 총 2~3회가량 맞아야 하며, 이후에는 1년에 한번씩 주기적으로 접종을 해줘야 한다.</dd>
 
@@ -303,13 +342,15 @@ section{
 
 				<dt>백혈병 :</dt>
 				<dd>생후 7~8주 사이에 맞아야 하는 백신이다. 개개인의 차에 따라 3주 간격으로 총 2~3회 가량 맞아야 하며, 이후에는 1년에 한번씩 주기적으로 접종을 해줘야 한다.</dd>
+			</div></div>
+			</dl>
 			
 
 			<h2>예방접종 전 주의사항</h2>
 
 			<p id="pline">-----------------------------------</p>
 			
-			<div>예방접종을 하기로 마음을 먹었다면 당연히 바로 동물병원으로 가고자 할 것이다. 하지만 동물도 사람과 같이 좋지 못한 상태에서 예방접종을 받을 경우, 예방이 아니라 오히려 그 병에 걸려버리는 안타까운 일이 생길수도 있다. 그러니 예방접종을 받기 전에 이하의 사항들을 숙지해보자.</div>
+			<div class="pdiv">예방접종을 하기로 마음을 먹었다면 당연히 바로 동물병원으로 가고자 할 것이다. 하지만 동물도 사람과 같이 좋지 못한 상태에서 예방접종을 받을 경우, 예방이 아니라 오히려 그 병에 걸려버리는 안타까운 일이 생길수도 있다. 그러니 예방접종을 받기 전에 이하의 사항들을 숙지해보자.</div>
 
 			<ul><span class="app">주의사항 체크</span>
 				<li>1. 접종 1~2일 전부터 격렬한 운동은 시키지 않는다.</li>
