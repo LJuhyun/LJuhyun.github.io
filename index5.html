@@ -38,6 +38,12 @@
 		margin: 10px 20px 0 0;
 	}
 
+	image:hover{
+		width: 150px;
+		transition: width 2s;
+	}
+
+
 	.letter{
 		font-weight: bold;
 		color: #712b33;
@@ -56,12 +62,12 @@
 
 	.letter.e:hover{
 		cursor: pointer;
-		opacity: 0.5;
+		transform: rotate(15deg);
 	}
 
 	.letter.p:hover{
 		cursor: pointer;
-		opacity: 0.5;
+		transform: rotate(15deg);
 	}
 
 
@@ -119,7 +125,6 @@
 
 		.drop{
 			color: #712b33;
-			text-decoration: underline;
 		}
 
 		.dropContents{
@@ -177,6 +182,10 @@ section{
 			font-size: 18px;
 			font-weight: bold;
 			display: inline;
+		}
+
+		.app.p{
+			text-decoration: underline;
 		}
 
 
@@ -310,7 +319,7 @@ section{
 				<br>
 
 				<div class="drop">
-			<dl><span class="app">반려견</span>
+			<dl><span class="app p">반려견</span>
 				<div class="dropContents">
 				<dt>종합 백신 :</dt>
 				<dd>생후 6~8주 사이에 맞아야 하는 백신이다. 2~3주 간격으로 총 5회 이상 맞아야 하며 이후에는 1년에 한번씩 주기적으로 접종을 해줘야 한다.</dd>
@@ -332,7 +341,7 @@ section{
 			<br>
 
 			<div class="drop">
-			<dl><span class="app">반려묘</span>
+			<dl><span class="app p">반려묘</span>
 				<div class="dropContents">
 				<dt>종합 백신 :</dt>
 				<dd>생후 7~8주 사이에 맞아야 하는 백신이다. 개개인의 차에 따라 3주 간격으로 총 2~3회가량 맞아야 하며, 이후에는 1년에 한번씩 주기적으로 접종을 해줘야 한다.</dd>
